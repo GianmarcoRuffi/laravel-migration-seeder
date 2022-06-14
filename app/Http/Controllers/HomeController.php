@@ -7,14 +7,14 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function index() {
-        $homes = Home::all();
-        return view('homesList', compact('homes'));
+        $travels = Home::all();
+        return view('travelslist', compact('travels'));
 
     }
 
     public function show($id) {
-        $homes = Home::findOrFail($id);
-        return view('detail', compact('home'));
+        $travels = Home::findOrFail($id);
+        return view('detail', compact('travel'));
 
     }
 }
