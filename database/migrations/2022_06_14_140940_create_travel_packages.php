@@ -13,7 +13,7 @@ class CreateTravelPackages extends Migration
      */
     public function up()
     {
-        Schema::create('travels', function (Blueprint $table) {
+        Schema::create('travel_packages', function (Blueprint $table) {
             $table->id();
             $table->string('hotel', 150);
             $table->unsignedSmallInteger('votes');

@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/travels', 'TravelController@index')->name('travels');
-Route::get('/travels/{id}', 'TravelController@show')->name('home');
+Route::get('/travels', 'TravelPackageController@index')->name('travels');
+Route::get('/travels/{id}', 'TravelPackageController@show')->name('home');
 
