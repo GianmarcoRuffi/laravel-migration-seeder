@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::get('/travels', 'TravelPackageController@index')->name('travels');
 Route::get('/travels/{id}', 'TravelPackageController@show')->name('home');
 
+Route::get('/flights', 'FlightController@index')->name('flights');
+Route::get('/flights/{id}', 'FlightController@show')->name('home');
+
