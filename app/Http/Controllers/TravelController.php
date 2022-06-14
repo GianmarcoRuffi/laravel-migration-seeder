@@ -4,16 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class TravelController extends Controller
 {
     public function index() {
-        $travels = Home::all();
-        return view('travelslist', compact('travels'));
+        $travels = Travel::all();
+        return view('travels', compact('travels'));
 
     }
 
     public function show($id) {
-        $travels = Home::findOrFail($id);
+        $travels = Travel::findOrFail($id);
         return view('detail', compact('travel'));
 
     }
